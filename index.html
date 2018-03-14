@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--meta-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Star-Wars-RPG-Game</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+    <!-- Added a link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    
+    <!-- Links-->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Rammetto+One" rel="stylesheet">
+
+   
+
+
+</head>
+<body >
+
+    <header>
+        <div class="header row">
+            <h1 class="col-md-offset-9">Star Wars RPG</h1>
+        </div>
+    </header>
+
+    <main>
+         <!-- Display the players to be selected -->
+        <div class="row" id="selection">
+            <div class="enemies  col-md-8 col-sm-12" id="enemies">
+                <div class="images textPostion selectionList col-md-3 col-sm-3" id="image1"></div>
+                <div class="images textPostion selectionList col-md-3 col-sm-3" id="image2"></div>
+                <div class="images textPostion selectionList col-md-3 col-sm-3" id="image3"></div>
+                <div class="images textPostion selectionList col-md-3 col-sm-3" id="image4"></div>
+            </div>
+        </div>
+
+        <!-- Display the  your players -->
+        <div class="row">
+            <div class="col-md-8">
+                <h2>Your Character</h2>
+                <div id="selected"></div>
+            </div>  
+        </div>
+
+        <!-- Display the enemies availabe to be selected -->
+        <div class="row">
+            <h2>Enemies Available To Attack</h2>
+            <div id="availableForSelection"></div>
+        </div>
+
+        <div>
+            <h2>Fight Section</h2>
+            <button class="attack">Attack</button>
+        </div>
+
+        <!-- Display the enemies selected -->
+        <div class="row">
+                <h2>Defender</h2>
+                <div id="selectedDefender"></div>
+        </div>
+        
+        <!-- Display info how your player attacked the enemy -->
+        <div id="attackerInfo"></div>
+
+        <!-- Display info how the enemy attacked back -->
+        <div id="counterAttackerInfo"></div>
+
+        <!-- Display info if you haven't selected the enemy and you still click the attack button -->
+        <div id="noSelectionInfo"></div>
+
+
+
+    </main>
+    
+     <!-- Added link to the jQuery Library -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     <script type="text/javascript" src="./assets/javascript/game.js"></script>
+</body>
+</html>

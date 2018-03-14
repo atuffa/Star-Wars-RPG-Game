@@ -1,0 +1,51 @@
+
+body{
+    background: url(C:/Users/abdis/Desktop/Star-Wars-RPG-Game/assets/images/background-image.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color:white;
+}
+
+.header{
+margin-bottom:30px;
+  
+}
+h1{
+    font-family: cursive;
+
+}
+main,header{
+    margin: 30px 30px;
+}
+.textPostion{
+    text-align:center;
+   
+}
+.images,.attacker{
+    background:white;
+    border: 2px solid green;
+}
+.defender{
+    background:red;
+    border: 2px solid black;
+    color: black
+}
+.opponent{
+    background:black;
+    border: 2px solid green;
+    color: white;
+}
+#attackerInfo{
+margin:10px 5px;
+}
+#counterAttackerInfo{
+margin:10px 5px;
+
+}
+button{
+    background-color:grey;
+    color:black;
+}
+
